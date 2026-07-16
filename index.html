@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Farolli Joias | O lançamento é hoje</title>
+<meta name="description" content="Você acompanhou cada pista. A peça continua em segredo até chegar na sua mão. Ouro 18k, direto da fábrica, com Garantia Farolli. Condição de estreia válida somente hoje.">
+<meta name="theme-color" content="#2E0813">
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Farolli Joias">
+<meta property="og:title" content="O segredo continua. A chance de entrar nele, não.">
+<meta property="og:description" content="Você garante a sua sem ver. A gente entra em contato na hora e revela cada detalhe. Ouro 18k com Garantia Farolli. Só hoje.">
+<meta property="og:image" content="https://SEU-DOMINIO.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Farolli Joias">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="O segredo continua. A chance de entrar nele, não.">
+<meta name="twitter:description" content="Você garante a sua sem ver. A gente entra em contato na hora e revela cada detalhe. Ouro 18k com Garantia Farolli. Só hoje.">
+<meta name="twitter:image" content="https://SEU-DOMINIO.vercel.app/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%232E0813'/%3E%3Cpath d='M12 3 L19 12 L12 21 L5 12 Z' fill='%23C9A24B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   FAROLLI JOIAS | LP de lançamento
+   Tokens derivados do brief. Ouro só em acento, nunca em bloco.
+   ============================================================ */
+:root{
+  --abismo:#2E0813;
+  --bordo:#4A0E1E;
+  --ouro:#C9A24B;
+  --ouro-claro:#E3C67E;
+  --champanhe:#F3E9D7;
+  --branco:#FBF7F0;
+
+  --fio:rgba(201,162,75,.28);
+  --fio-forte:rgba(201,162,75,.55);
+  --texto:rgba(243,233,215,.76);
+
+  --display:"Cormorant Garamond",Georgia,serif;
+  --corpo:"Jost",system-ui,-apple-system,sans-serif;
+
+  --medida:34rem;
+  --banda:clamp(5rem,13vw,8.5rem);
+  --gutter:clamp(1.35rem,5vw,2rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--abismo);
+  color:var(--texto);
+  font-family:var(--corpo);
+  font-weight:300;
+  font-size:clamp(1rem,.97rem + .18vw,1.075rem);
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+
+/* Grão fino sobre tudo. Textura, não ruído visível. */
+body::before{
+  content:"";position:fixed;inset:0;z-index:9;pointer-events:none;
+  opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- estrutura ---------- */
+.banda{padding:var(--banda) var(--gutter);position:relative}
+.banda--abismo{background:var(--abismo)}
+
+/* ---------- tipografia ---------- */
+.sobrancelha{
+  font-family:var(--corpo);
+  font-size:.66rem;font-weight:500;
+  letter-spacing:.42em;text-transform:uppercase;
+  color:var(--ouro);
+  margin:0 0 1.75rem;
+}
+.display{
+  font-family:var(--display);
+  font-weight:300;
+  color:var(--branco);
+  line-height:1.04;
+  letter-spacing:-.005em;
+  margin:0;
+  text-wrap:balance;
+}
+.display--hero{font-size:clamp(2.55rem,9.5vw,4.4rem)}
+
+/* ---------- o losango: assinatura da página ----------
+   Vem do próprio "O" do logo da Farolli. É o selo do segredo.
+   Contorno em toda a página. Sólido uma única vez, no fecho. */
+.losango{width:1em;height:1em;flex:none;overflow:visible}
+.losango path{fill:none;stroke:var(--ouro);stroke-width:1.5;vector-effect:non-scaling-stroke}
+
+.divisor{
+  display:flex;align-items:center;justify-content:center;gap:1.1rem;
+  margin:0 0 2rem;padding:0;border:0;
+}
+.divisor::before,.divisor::after{
+  content:"";height:1px;flex:1;max-width:5.5rem;
+  background:linear-gradient(90deg,transparent,var(--fio-forte));
+}
+.divisor::after{background:linear-gradient(90deg,var(--fio-forte),transparent)}
+.divisor .losango{font-size:.6rem}
+
+/* ---------- hero ---------- */
+.hero{
+  min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;
+  text-align:center;
+  padding-block:clamp(1.25rem,3vh,2.5rem);
+  /* Bordô profundo, quase preto: o brilho é só um sopro no topo.
+     Se o hero clarear, ele encosta na banda--bordo e a virada some. */
+  background:
+    radial-gradient(115% 60% at 50% -8%,rgba(74,14,30,.55) 0%,transparent 58%),
+    var(--abismo);
+}
+/* O hero vende sozinho: título, vídeo e oferta cabem numa tela.
+   No mobile empilha; a partir de 900px o vídeo vertical vira coluna
+   e o texto ocupa o espaço que sobra ao lado dele. */
+.hero__grade{
+  display:grid;
+  gap:clamp(.85rem,2vh,1.5rem);
+  justify-items:center;
+  width:100%;
+  max-width:38rem;
+  margin-inline:auto;
+}
+/* Telas curtas (iPhone SE e afins): tudo encolhe para o CTA não sair
+   da dobra, que é o ponto inteiro deste hero. */
+@media (max-height:720px){
+  .hero .microcopy{display:none}
+  .display--hero{font-size:2.1rem}
+  .palco .caixa{max-width:280px;margin-bottom:1rem}
+  .tocar{padding:.5rem 1.1rem .5rem .5rem;gap:.8rem}
+  .tocar__anel{width:46px;height:46px}
+  .tocar__anel .losango{font-size:1rem}
+  .tocar b{font-size:1.05rem}
+  .tocar small{font-size:.8rem}
+}
+/* Android de entrada (360x640), que no Brasil não é caso raro. */
+@media (max-height:660px){
+  .hero__grade{gap:.6rem}
+  .display--hero{font-size:1.8rem}
+  .palco .caixa{max-width:228px;margin-bottom:.75rem}
+  .flash__parcela{margin-top:.3rem}
+  .flash__relogio{margin-top:.6rem}
+}
+@media (min-width:900px){
+  .hero__grade{
+    grid-template-columns:auto minmax(0,1fr);
+    align-items:center;
+    max-width:60rem;
+    gap:0 clamp(2.5rem,5vw,4rem);
+    text-align:left;
+  }
+  .hero__titulo{grid-column:2;grid-row:1;justify-self:start}
+  .palco{grid-column:1;grid-row:1 / span 2}
+  .hero__oferta{grid-column:2;grid-row:2;justify-self:start;margin-top:1.75rem}
+}
+
+/* ---------- oferta compacta do hero ----------
+   A versão cheia, com a caixa, mora na seção 4. Aqui é só o
+   suficiente para quem já decidiu comprar sem rolar a página. */
+.flash{width:100%;max-width:24rem}
+/* "De 800" na mesma linha do "399": empilhar custaria altura que a
+   dobra não tem, e lado a lado o desconto lê de imediato. */
+.flash__precos{
+  display:flex;align-items:baseline;justify-content:center;
+  gap:.7rem;margin:0;flex-wrap:wrap;
+}
+.flash__de{
+  font-size:.95rem;color:rgba(243,233,215,.5);
+  text-decoration:line-through;text-decoration-color:var(--fio-forte);
+}
+.flash__preco{
+  font-family:var(--display);
+  font-size:clamp(2.4rem,9vw,3.1rem);font-weight:400;
+  color:var(--branco);line-height:1;margin:0;
+  font-variant-numeric:lining-nums tabular-nums;
+}
+@media (min-width:900px){
+  .flash__precos{justify-content:flex-start}
+}
+.flash__parcela{font-size:.85rem;color:var(--champanhe);margin:.5rem 0 0}
+.flash__relogio{
+  font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ouro);margin:1rem 0 0;
+}
+.flash__relogio b{
+  font-family:var(--display);font-size:1.15rem;font-weight:500;letter-spacing:.02em;
+  color:var(--champanhe);
+  font-variant-numeric:lining-nums tabular-nums;
+}
+.flash .cta{margin-top:1.1rem}
+.flash .microcopy{margin-top:.6rem}
+@media (min-width:900px){
+  .flash .microcopy,.flash__relogio{text-align:left}
+}
+
+/* ---------- vídeo ----------
+   A orientação vem do CONFIG, porque ela mudou uma vez e pode mudar
+   de novo: o master local é 9:16, o que subiu no YouTube é 16:9. */
+.palco{
+  display:flex;flex-direction:column;align-items:center;
+  width:100%;max-width:24rem;
+}
+.palco .caixa{margin-bottom:1.5rem}
+@media (min-width:900px){
+  .palco{max-width:26rem}
+}
+
+/* ---------- a luz: o vídeo toma a tela ----------
+   <dialog> traz Esc, foco preso e fundo de graça. */
+.luz{
+  border:0;padding:0;margin:auto;
+  max-width:100vw;max-height:100svh;width:100vw;height:100svh;
+  background:transparent;
+  place-items:center;
+  overflow:hidden;
+}
+.luz[open]{display:grid}
+.luz::backdrop{background:rgba(16,3,8,.94)}
+.luz video{
+  max-height:88svh;max-width:calc(100vw - 2rem);
+  aspect-ratio:9/16;
+  background:#000;
+  border:1px solid var(--fio);
+}
+.luz__x{
+  position:absolute;top:.9rem;right:.9rem;
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(46,8,19,.85);border:1px solid var(--fio-forte);
+  color:var(--champanhe);font-size:1.5rem;line-height:1;
+  cursor:pointer;display:grid;place-items:center;
+  font-family:var(--corpo);font-weight:300;
+}
+.luz__x:hover{border-color:var(--ouro);color:var(--ouro)}
+
+/* Cantos: só as quinas, como um estojo. Compartilhado entre a moldura
+   do vídeo e a caixa da oferta, os dois recipientes lacrados da página. */
+.quina{position:absolute;width:14px;height:14px;border:1px solid var(--ouro);opacity:.85}
+.quina--tl{top:9px;left:9px;border-right:0;border-bottom:0}
+.quina--tr{top:9px;right:9px;border-left:0;border-bottom:0}
+.quina--bl{bottom:9px;left:9px;border-right:0;border-top:0}
+.quina--br{bottom:9px;right:9px;border-left:0;border-top:0}
+
+/* ---------- o play ----------
+   Botão próprio, fora da caixa: o letreiro "Produto Misterioso" ocupa
+   o centro da arte, e um anel por cima dele brigaria com o wordmark. */
+.tocar{
+  display:inline-flex;align-items:center;gap:1.1rem;
+  width:100%;justify-content:center;
+  background:rgba(201,162,75,.1);
+  border:1px solid var(--fio-forte);
+  padding:.85rem 1.6rem .85rem .85rem;
+  margin:0;cursor:pointer;text-align:left;
+  font-family:var(--corpo);
+  transition:border-color .35s ease,background .35s ease;
+}
+.tocar:hover,.tocar:focus-visible{border-color:var(--ouro);background:rgba(201,162,75,.18)}
+.tocar__anel{
+  width:60px;height:60px;border-radius:50%;flex:none;
+  border:1px solid var(--ouro);
+  display:grid;place-items:center;position:relative;
+}
+.tocar__anel::after{
+  content:"";position:absolute;inset:-9px;border-radius:50%;
+  border:1px solid var(--fio);
+  animation:respiro 4.5s ease-in-out infinite;
+}
+.tocar__anel .losango{font-size:1.3rem}
+.tocar__txt{display:grid;gap:.2rem}
+/* Champanhe cheio, sem opacidade: a versão anterior era 13px a 72%
+   e simplesmente não dava para ler sobre o bordô. */
+.tocar b{font-size:1.25rem;font-weight:400;color:var(--branco);letter-spacing:.01em;line-height:1.2}
+.tocar small{font-size:.88rem;color:var(--champanhe);opacity:.8;line-height:1.3}
+@keyframes respiro{
+  0%,100%{transform:scale(1);opacity:.5}
+  50%{transform:scale(1.11);opacity:.16}
+}
+
+/* ---------- passos: aqui a numeração é verdade, é a ordem do processo ---------- */
+
+/* ---------- destaques ---------- */
+
+/* ---------- confiança ---------- */
+
+/* A loja é a prova de que tem gente de verdade do outro lado.
+   O véu só assenta a foto no bordô, ela precisa continuar legível. */
+
+/* ---------- a caixa: o objeto que você compra sem ver ----------
+   A página não tem foto da peça por decisão de campanha, então a oferta
+   precisava de algo para olhar. O letreiro resolve sem entregar nada. */
+.caixa{
+  position:relative;
+  width:100%;
+  aspect-ratio:3/2;
+  margin:0 auto 2.5rem;
+  border:1px solid var(--fio-forte);
+  background:var(--abismo);
+  /* Sem overflow:hidden. O selo monta sobre a borda de propósito,
+     e o clipe cortava ele ao meio. */
+}
+.caixa img{width:100%;height:100%;object-fit:cover;display:block}
+/* Um sopro de ouro que respira por cima da arte, para a caixa não ficar
+   parada no meio de uma página que pulsa. */
+.caixa::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 50% 58%,rgba(201,162,75,.18),transparent 62%);
+  animation:pulsar 4.5s ease-in-out infinite;
+}
+.caixa .quina{z-index:2}
+.caixa__selo{
+  position:absolute;left:50%;bottom:-1px;transform:translate(-50%,50%);z-index:3;
+  background:var(--bordo);
+  padding:.1rem .6rem;
+  font-size:.55rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--ouro);
+  border:1px solid var(--fio);
+}
+@keyframes pulsar{
+  0%,100%{opacity:.55}
+  50%{opacity:1}
+}
+
+/* ---------- oferta ---------- */
+
+/* ---------- CTA ---------- */
+.cta{
+  display:block;width:100%;
+  margin:2.25rem 0 0;
+  padding:1.3rem 1.5rem;
+  background:var(--ouro);
+  color:#3A0A16;
+  font-family:var(--corpo);
+  font-size:.82rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  text-align:center;text-decoration:none;
+  border:0;cursor:pointer;
+  position:relative;overflow:hidden;
+  transition:background .35s ease,transform .35s ease;
+}
+.cta:hover{background:var(--ouro-claro);transform:translateY(-2px)}
+.cta > span{position:relative;z-index:2}
+/* brilho suave, um passe lento */
+.cta::after{
+  content:"";position:absolute;top:0;bottom:0;left:-60%;width:45%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);
+  transform:skewX(-18deg);
+  animation:passe 5.5s ease-in-out infinite;
+}
+@keyframes passe{
+  0%,68%{left:-60%}
+  100%{left:130%}
+}
+.microcopy{
+  font-size:.78rem;color:rgba(243,233,215,.55);
+  margin:1.1rem 0 0;text-align:center;text-wrap:pretty;
+}
+
+/* ---------- FAQ ---------- */
+
+/* ---------- fecho ---------- */
+
+/* ---------- whatsapp ---------- */
+.zap{
+  position:fixed;right:1rem;bottom:1rem;z-index:20;
+  width:52px;height:52px;border-radius:50%;
+  background:var(--bordo);border:1px solid var(--fio-forte);
+  display:grid;place-items:center;
+  box-shadow:0 6px 26px rgba(0,0,0,.5);
+  transition:transform .3s ease,border-color .3s ease;
+}
+.zap:hover{transform:scale(1.07);border-color:var(--ouro)}
+.zap svg{width:24px;height:24px;fill:var(--ouro)}
+
+/* ---------- rodapé ---------- */
+.rodape{
+  background:var(--abismo);
+  border-top:1px solid rgba(201,162,75,.14);
+  padding:3.5rem var(--gutter) 5.5rem;
+  text-align:center;
+}
+.rodape__marca{width:96px;margin:0 auto 2rem;opacity:.62}
+.rodape__linha{font-size:.76rem;color:rgba(243,233,215,.42);margin:.4rem 0;line-height:1.65}
+.rodape__links{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.4rem;margin:1.75rem 0 0}
+.rodape a{color:rgba(243,233,215,.62);text-decoration:none;font-size:.76rem;border-bottom:1px solid var(--fio);padding-bottom:2px}
+.rodape a:hover{color:var(--ouro);border-color:var(--ouro)}
+
+/* ---------- revelação ao scroll ----------
+   Só esconde se o JS estiver vivo para revelar de volta. Sem a trava
+   do .js, um erro no CONFIG deixaria a página inteira invisível. */
+.js .sobe{opacity:0;transform:translateY(22px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.3,1)}
+.js .sobe.dentro{opacity:1;transform:none}
+
+/* ---------- piso de qualidade ---------- */
+:focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .sobe{opacity:1;transform:none}
+}
+@media (min-width:720px){
+  .zap{right:1.75rem;bottom:1.75rem;width:58px;height:58px}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add("js");</script>
+
+<!-- =========================================================
+     1. HERO. Sem produto e sem botão de compra, de propósito.
+     A primeira ação da página é assistir.
+     ========================================================= -->
+<header class="hero banda banda--abismo">
+  <div class="hero__grade">
+
+    <div class="hero__titulo">
+      <p class="sobrancelha sobe">Farolli Joias apresenta</p>
+      <h1 class="display display--hero sobe">Você acompanhou cada pista. Chegou a hora.</h1>
+    </div>
+
+    <div class="palco sobe">
+      <div class="caixa">
+        <picture>
+          <source srcset="caixa-misteriosa.webp" type="image/webp">
+          <img src="caixa-misteriosa.jpg" alt="Produto Misterioso, uma peça Farolli em ouro 18k mantida em segredo até o contato" width="900" height="600" fetchpriority="high">
+        </picture>
+        <span class="quina quina--tl"></span>
+        <span class="quina quina--tr"></span>
+        <span class="quina quina--bl"></span>
+        <span class="quina quina--br"></span>
+        <span class="caixa__selo">Ouro 18k</span>
+      </div>
+      <button class="tocar" id="moldura" type="button">
+        <span class="tocar__anel">
+          <svg class="losango" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L19 12 L12 22.5 L5 12 Z"/></svg>
+        </span>
+        <span class="tocar__txt">
+          <b>Aperte o play</b>
+          <small>28 segundos, zero spoiler.</small>
+        </span>
+      </button>
+    </div>
+
+    <div class="hero__oferta flash sobe">
+      <p class="flash__precos">
+        <span class="flash__de" data-preco-cheio></span>
+        <span class="flash__preco" data-preco></span>
+      </p>
+      <p class="flash__parcela">ou em até 10x sem juros</p>
+      <p class="flash__relogio">Termina em <b data-t="hms">00:00:00</b></p>
+      <a class="cta" data-cta href="#" target="_blank" rel="noopener"><span>Quero o produto misterioso</span></a>
+      <p class="microcopy">Pagamento seguro. Garantia Farolli.</p>
+    </div>
+
+  </div>
+</header>
+
+<dialog class="luz" id="luz" aria-label="Vídeo do lançamento">
+  <button class="luz__x" id="luz-x" type="button" aria-label="Fechar o vídeo">&times;</button>
+  <video id="filme" playsinline controls preload="none"></video>
+</dialog>
+
+
+<footer class="rodape">
+  <img class="rodape__marca" src="logo-champanhe.png" alt="Farolli Joias" width="372" height="138" loading="lazy">
+  <div class="divisor" role="presentation">
+    <svg class="losango" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 L19 12 L12 22.5 L5 12 Z"/></svg>
+  </div>
+  <p class="rodape__linha">Farolli Joias | CNPJ 23.722.542/0001-73</p>
+  <p class="rodape__linha">Ed. The Union, Trecho 3, Brasília, DF</p>
+  <nav class="rodape__links">
+    <a href="https://wa.me/5561984011314" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://instagram.com/farolli.joias" target="_blank" rel="noopener">@farolli.joias</a>
+    <a href="https://farollijoias.com.br/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+    <a href="https://farollijoias.com.br/trocas-e-devolucoes" target="_blank" rel="noopener">Trocas e Devoluções</a>
+  </nav>
+</footer>
+
+<a class="zap" href="https://wa.me/5561984011314" target="_blank" rel="noopener" aria-label="Falar com a Farolli no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02c-1.75 0-3.47-.47-4.97-1.36l-.36-.21-3.7.97.99-3.6-.23-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.44 4.44-9.87 9.9-9.87 2.64 0 5.13 1.03 7 2.9a9.8 9.8 0 0 1 2.9 6.98c0 5.45-4.44 9.88-9.9 9.88M20.5 3.5A11.77 11.77 0 0 0 12.05 0C5.5 0 .16 5.32.16 11.86c0 2.09.55 4.13 1.59 5.93L.06 24l6.36-1.66a11.9 11.9 0 0 0 5.63 1.43h.01c6.55 0 11.89-5.32 11.89-11.86 0-3.17-1.24-6.15-3.48-8.39"/></svg>
+</a>
+
+<script>
+/* ============================================================
+   PREENCHA ANTES DE PUBLICAR.
+   Estes quatro valores são a única coisa que falta na página.
+   ============================================================ */
+const CONFIG = {
+  LINK_PAGAMENTO: "https://farollijoias.com.br/produtos/produtosurpresa/",
+
+  PRECO_LANCAMENTO: "R$ 399",
+  // Deixe "" se não houver preço "de". O "De:" some sozinho.
+  PRECO_CHEIO: "R$ 800",
+
+  // Vídeo próprio, não YouTube: o player do YouTube exibe o nome do
+  // canal, e numa página que pede confiança na Farolli, ver o nome de
+  // outra conta derruba justamente o que a página está construindo.
+  VIDEO: "video.mp4",
+  POSTER: "poster.jpg",
+};
+
+/* ---------- preços ---------- */
+for (const el of document.querySelectorAll("[data-preco]")) {
+  el.textContent = CONFIG.PRECO_LANCAMENTO;
+}
+for (const el of document.querySelectorAll("[data-preco-cheio]")) {
+  if (CONFIG.PRECO_CHEIO) el.textContent = "De " + CONFIG.PRECO_CHEIO;
+  else el.remove();
+}
+
+/* ---------- CTAs ---------- */
+for (const el of document.querySelectorAll("[data-cta]")) {
+  el.href = CONFIG.LINK_PAGAMENTO;
+}
+
+/* ---------- vídeo ----------
+   O play acende a luz e o vídeo toma a tela: é a única forma de a
+   legenda queimada ficar legível no celular. O arquivo só é buscado
+   no primeiro play, então a página abre leve. */
+const luz = document.getElementById("luz");
+const filme = document.getElementById("filme");
+
+document.getElementById("moldura").addEventListener("click", () => {
+  if (!filme.src) {
+    filme.src = CONFIG.VIDEO;
+    filme.poster = CONFIG.POSTER;
+  }
+  luz.showModal();
+  filme.play().catch(() => {
+    // Autoplay barrado: os controles nativos assumem.
+  });
+});
+
+document.getElementById("luz-x").addEventListener("click", () => luz.close());
+// Clicar no fundo fecha. O <dialog> já cuida do Esc.
+luz.addEventListener("click", (e) => {
+  if (e.target === luz) luz.close();
+});
+luz.addEventListener("close", () => filme.pause());
+
+/* ---------- contador até 23:59:59 de hoje, horário de Brasília.
+   O Brasil não usa horário de verão desde 2019, então UTC-3 é fixo.
+   Ancorar na data de Brasília (e não na do aparelho) mantém o
+   contador correto para quem acessa de outro fuso. ---------- */
+// Há dois relógios na página (o compacto do hero e o cheio da oferta),
+// alimentados pela mesma contagem para não dessincronizarem.
+const pinta = (chave, valor) => {
+  for (const el of document.querySelectorAll(`[data-t="${chave}"]`)) el.textContent = valor;
+};
+
+function fimDoDiaBrasilia() {
+  const hojeBR = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Sao_Paulo",
+    year: "numeric", month: "2-digit", day: "2-digit",
+  }).format(new Date());
+  const [a, m, d] = hojeBR.split("-").map(Number);
+  // 23:59:59 em Brasília (UTC-3) é 02:59:59 UTC do dia seguinte.
+  return Date.UTC(a, m - 1, d, 26, 59, 59, 999);
+}
+
+let alvo = fimDoDiaBrasilia();
+
+function tick() {
+  let resta = alvo - Date.now();
+
+  if (resta <= 0) {
+    // Virou o dia enquanto a aba estava aberta: reancora em vez de zerar.
+    const novo = fimDoDiaBrasilia();
+    if (novo > alvo) {
+      alvo = novo;
+      resta = alvo - Date.now();
+    } else {
+      for (const el of document.querySelectorAll("[data-rotulo]")) {
+        el.textContent = "A condição de lançamento terminou";
+      }
+      pinta("hh", "00"); pinta("mm", "00"); pinta("ss", "00");
+      pinta("hms", "00:00:00");
+      clearInterval(timer);
+      return;
+    }
+  }
+
+  const s = Math.floor(resta / 1000);
+  const hh = String(Math.floor(s / 3600)).padStart(2, "0");
+  const mm = String(Math.floor((s % 3600) / 60)).padStart(2, "0");
+  const ss = String(s % 60).padStart(2, "0");
+  pinta("hh", hh); pinta("mm", mm); pinta("ss", ss);
+  pinta("hms", `${hh}:${mm}:${ss}`);
+}
+
+tick();
+const timer = setInterval(tick, 1000);
+
+</script>
+
+<!-- Bloco separado de propósito: <script> tem fronteira de erro própria.
+     Se o CONFIG acima quebrar, a página ainda se revela e continua
+     legível, em vez de ficar em branco. -->
+<script>
+/* ---------- revelação ao scroll ---------- */
+const alvos = document.querySelectorAll(".sobe");
+if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  alvos.forEach((el) => el.classList.add("dentro"));
+} else {
+  const olho = new IntersectionObserver(
+    (entradas) => {
+      entradas.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add("dentro");
+        olho.unobserve(e.target);
+      });
+    },
+    { threshold: 0.14, rootMargin: "0px 0px -8% 0px" }
+  );
+  // O hero entra em cascata no load. O resto entra ao scroll.
+  const hero = document.querySelectorAll(".hero .sobe");
+  hero.forEach((el, i) => {
+    el.style.transitionDelay = 220 * i + "ms";
+    requestAnimationFrame(() => el.classList.add("dentro"));
+  });
+  alvos.forEach((el) => {
+    if (!el.closest(".hero")) olho.observe(el);
+  });
+}
+</script>
+</body>
+</html>
